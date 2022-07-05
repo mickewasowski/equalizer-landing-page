@@ -191,9 +191,133 @@ footer div:nth-child(1) {
     fill: hsl(12, 94%, 65%);
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+/* phone design */
+@media (min-width: 320px) and (max-width: 540px) {
+
+    body {
+        background-image: url('./assets/bg-main-mobile.png');
+    }
+
+    .page-container {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .logo-container {
+        margin-top: 2rem;
+        padding-left: 1rem;
+    }
+
+    .description-container {
+        width: 100%;
+
+    }
+
+    #big-heading {
+        font-size: 2.5rem;
+    }
+
+    #big-heading,
+    .description-container>p {
+        width: auto;
+        padding: 0 1rem;
+    }
 
     .offer-container {
-        background-color: hsl(244, 23%, 12%);
+        flex-direction: column;
+        align-items: center;
+
+        background-position: 54% 0%;
+    }
+
+    #app-illustration {
+        transform: translate(0, -101px);
+        text-align: center;
+    }
+
+    #app-illustration>img {
+        width: 100%;
+        height: 28rem;
+    }
+
+    #plan-container {
+        width: 100%;
+        transform: translate(0, 0);
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3rem;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    footer div:nth-child(1),
+    #copyright,
+    #icons {
+        flex: auto;
+    }
+
+    #copyright {
+        width: 90%;
+    }
+
+    #icons {
+        justify-content: flex-start;
+    }
+
+    #icons>a {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+}
+
+/* tablet design */
+@media (min-width: 700px) and (max-width: 1200px) {
+
+    body {
+        background-image: url('./assets/bg-pattern-1.svg'), url('./assets/bg-main-tablet.png');
+    }
+
+    .page-container {
+        width: 90%;
+    }
+
+    #big-heading {
+        width: auto;
+        font-size: 2.5rem;
+    }
+
+    .offer-container {
+        background-position: 71% -33%;
+    }
+
+    #app-illustration {
+        transform: translate(58px, -214px);
+    }
+
+    #plan-container {
+        width: 55%;
+        transform: translate(-56px, 137px);
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer div:nth-child(1) {
+        margin-bottom: 1rem;
+    }
+
+    #copyright {
+        width: 50%;
+        float: left;
+    }
+
+    #icons {
+        align-self: flex-end;
+        float: right;
     }
 }
