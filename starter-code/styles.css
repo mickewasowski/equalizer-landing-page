@@ -210,11 +210,17 @@ footer div:nth-child(1) {
 
     .description-container {
         width: 100%;
-        padding-left: 1rem;
+
     }
 
     #big-heading {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    #big-heading,
+    .description-container>p {
+        width: auto;
+        padding: 0 1rem;
     }
 
     .offer-container {
@@ -269,3 +275,49 @@ footer div:nth-child(1) {
 }
 
 /* tablet design */
+@media (min-width: 700px) and (max-width: 1200px) {
+
+    body {
+        background-image: url('./assets/bg-pattern-1.svg'), url('./assets/bg-main-tablet.png');
+    }
+
+    .page-container {
+        width: 90%;
+    }
+
+    #big-heading {
+        width: auto;
+        font-size: 2.5rem;
+    }
+
+    .offer-container {
+        background-position: 71% -33%;
+    }
+
+    #app-illustration {
+        transform: translate(58px, -214px);
+    }
+
+    #plan-container {
+        width: 55%;
+        transform: translate(-56px, 137px);
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer div:nth-child(1) {
+        margin-bottom: 1rem;
+    }
+
+    #copyright {
+        width: 50%;
+        float: left;
+    }
+
+    #icons {
+        align-self: flex-end;
+        float: right;
+    }
+}
