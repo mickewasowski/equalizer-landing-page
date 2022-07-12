@@ -19,6 +19,11 @@ export const H1 = styled.h1`
         width: auto;
         padding: 0 1rem;
     }
+
+    @media (min-width: 700px) and (max-width: 1200px) {
+        width: auto;
+        font-size: 2.5rem;
+    }
 `
 
 export const Parag = styled.p`

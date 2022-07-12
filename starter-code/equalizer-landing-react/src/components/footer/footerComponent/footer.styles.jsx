@@ -19,6 +19,10 @@ export const FooterContainer = styled.footer`
         padding: 2rem;
         margin: 0;
     }
+
+    @media (min-width: 700px) and (max-width: 1200px) {
+        display: block;
+    }
 `
 
 export const FirstDiv = styled.div`
@@ -26,6 +30,10 @@ export const FirstDiv = styled.div`
 
     @media (min-width: 320px) and (max-width: 540px) {
         flex: auto;
+    }
+
+    @media (min-width: 700px) and (max-width: 1200px) {
+        margin-bottom: 1rem;
     }
 `
 
@@ -36,6 +44,11 @@ export const CopyrightContainer = styled.div`
     @media (min-width: 320px) and (max-width: 540px) {
         flex: auto;
         width: 90%;
+    }
+
+    @media (min-width: 700px) and (max-width: 1200px) {
+        width: 50%;
+        float: left;
     }
 `
 
@@ -52,6 +65,11 @@ export const IconsContainer = styled.div`
     @media (min-width: 320px) and (max-width: 540px) {
         flex: auto;
         justify-content: flex-start;
+    }
+
+    @media (min-width: 700px) and (max-width: 1200px) {
+        align-self: flex-end;
+        float: right;
     }
 `
 

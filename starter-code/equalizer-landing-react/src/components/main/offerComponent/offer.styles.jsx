@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import patternPath from '../../../assets/bg-pattern-2.svg';
 
 export const OfferContainer = styled.div`
-background-image: url('./assets/bg-pattern-2.svg');
+background-image: url('../../../assets/bg-pattern-2.svg');
     background-repeat: no-repeat;
     background-position: 45% -30%;
     background-color: hsl(244, 23%, 12%);
@@ -16,6 +17,10 @@ background-image: url('./assets/bg-pattern-2.svg');
 
         background-position: 54% 0%;
     }
+
+    @media (min-width: 700px) and (max-width: 1200px) {
+        background-position: 71% -33%;
+    }
 `
 
 export const AppIllustration = styled.div`
@@ -24,6 +29,10 @@ export const AppIllustration = styled.div`
     @media (min-width: 320px) and (max-width: 540px) {
         transform: translate(0, -101px);
         text-align: center;
+    }
+
+    @media (min-width: 700px) and (max-width: 1200px) {
+        transform: translate(58px, -214px);
     }
 `
 
@@ -51,6 +60,11 @@ export const PlanContainer = styled.div`
     @media (min-width: 320px) and (max-width: 540px) {
         width: 100%;
         transform: translate(0, 0);
+    }
+
+    @media (min-width: 700px) and (max-width: 1200px) {
+        width: 55%;
+        transform: translate(-56px, 137px);
     }
 `
 
