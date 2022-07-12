@@ -10,3 +10,9 @@ body{
     background-attachment: local, fixed;
     background-position: 100% -3%, 0% 15%;
 }
+
+@media (min-width: 320px) and (max-width: 540px) {
+    body {
+        background-image: url('./assets/bg-main-mobile.png');
+    }
+}

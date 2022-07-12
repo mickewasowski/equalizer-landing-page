@@ -5,4 +5,13 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 5rem;
+
+    
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+    #root{
+        width: 100%;
+        gap: 2rem;
+    }
 }
