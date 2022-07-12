@@ -9,15 +9,32 @@ background-image: url('./assets/bg-pattern-2.svg');
     display: flex;
     justify-content: space-around;
     margin-top: 20rem;
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        flex-direction: column;
+        align-items: center;
+
+        background-position: 54% 0%;
+    }
 `
 
 export const AppIllustration = styled.div`
     transform: translate(0, -214px);
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        transform: translate(0, -101px);
+        text-align: center;
+    }
 `
 
 export const AppImg = styled.img`
     width: 19.5rem;
     height: 40.125rem;
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        width: 100%;
+        height: 28rem;
+    }
 `
 
 export const PlanContainer = styled.div`
@@ -30,6 +47,11 @@ export const PlanContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     transform: translate(0, 115px);
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        width: 100%;
+        transform: translate(0, 0);
+    }
 `
 
 export const PlanItems = styled.div`
