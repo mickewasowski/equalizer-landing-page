@@ -10,15 +10,33 @@ export const FooterContainer = styled.footer`
     display: flex;
     justify-content: space-between;
     margin: 7rem 0;
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3rem;
+        padding: 2rem;
+        margin: 0;
+    }
 `
 
 export const FirstDiv = styled.div`
     flex: 2;
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        flex: auto;
+    }
 `
 
 export const CopyrightContainer = styled.div`
     width: 25%;
     flex: 2;
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        flex: auto;
+        width: 90%;
+    }
 `
 
 export const CopyParag = styled.p`
@@ -30,11 +48,21 @@ export const IconsContainer = styled.div`
     width: 7%;
     display: flex;
     justify-content: flex-end;
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        flex: auto;
+        justify-content: flex-start;
+    }
 `
 
 export const StyledNavLink = styled(NavLink)`
     margin-left: 2rem;
     text-decoration: none;
+
+    @media (min-width: 320px) and (max-width: 540px) {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
 `
 
 export const FacebookLogo = styled(Facebook)`
